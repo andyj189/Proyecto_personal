@@ -3,26 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>ANDY_ADRIANZEN</title>
 </head>
 <body>
     <!--Encabezado-->
-    <header>
+    <header class="encabezado">
         <h1>PORTAFOLIO ANDY ADRIANZEN REYES </h1>
          <!--Contenido lateral-->
-        <aside>
+        <aside class="contenido_lateral">
             <!--Navegación-->
-            <nav>
-                <a>Sobre mi</a>
-                <a>Experiencia</a>
-                <a>Proyectos</a>
-                <a>Lenguajes</a>
-                <a>Contactame</a>
+            <nav class="menu">
+                <a href="#sobre_mi">Sobre mi</a>
+                <a href="#Experiencia">Experiencia</a>
+                <a href="#Proyectos">Proyectos</a>
+                <a href="#Habilidades">Habilidades</a>
+                <a href="#Cursos">Cursos</a>
+                <a href="#Contactame">Contactame</a>
             </nav>  
         </aside>
 
         <!--Seccion de redes de contacto-->
-        <section>
+        <section class="redes">
             <nav>
                 <a href="https://github.com/andyj189">Github</a>
                 <a href="www.linkedin.com/in/andy-adrianzen89">LinkedIn</a>
@@ -32,24 +34,23 @@
     </header>
 
     <!--Contenido principal-->
-    <main>
+    <main class="contenido_principal">
         <section>
-            
             <!--Contenido independiente-->
             <article>
-                <h1>Yo soy</h1>
+                <h1 id="sobre_mi">Sobre Mi</h1>
                 <p>Alumno universitario del 8to ciclo de la carrera de Ingenieria de Sistemas e Informatica</p>
                 <img src="img/foto_perfil.jpg" >
             </article>
 
             <article>
-                <h1>Mi experiencia</h1>
+                <h1 id="Experiencia">Mi experiencia</h1>
                 <p>Experiencia en atencion al cliente</p>
                 <img >
             </article>
 
             <section>
-                <h1>Proyectos</h1>
+                <h1 id="Proyetos">Proyectos</h1>
                 <article>
                     <h2>Sistema Web</h2>
                     <p>Sistema de matriculas</p>
@@ -57,10 +58,23 @@
 
             </section>
 
+            <section>
+                <h1 id="Habilidades">Habilidades</h1>
+                <article>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </article>
+
+            </section>
+
         </section>
 
-        <section>
-            <table>
+        <section class="Cursos">
+            <table id="Cursos">
                 <tr>
                     <th>CURSOS</th>
                     <th>EMPRESA</th>
@@ -87,7 +101,7 @@
     </main>
     
     <!--Pie de pagina-->
-    <footer>
+    <footer class="pie_pagina">
         <!--Formularios-->
             <form>
                 <div>
