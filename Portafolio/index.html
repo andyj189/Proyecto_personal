@@ -4,31 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>ANDY_ADRIANZEN</title>
 </head>
 <body>
     <!--Encabezado-->
-    <header class="encabezado">
-        <h1>PORTAFOLIO ANDY ADRIANZEN REYES </h1>
+    <header class="encabezado" >
+        <section class="hero">
+        <div class="hero-texto">
+            <h1>Hola, soy Andy Adrianzen</h1>
+
+            <h2>Estudiante de Ingeniería de Sistemas</h2>
+
+            <p>
+                Desarrollo aplicaciones web utilizando
+                HTML, CSS, JavaScript, React, FastAPI y MySQL.
+            </p>
+
+            <a href="#Proyectos" class="btn">
+                Ver proyectos
+            </a>
+        </div>
+
+        <div class="hero-imagen">
+            <img src="img/foto_perfil.jpg" alt="Andy Adrianzen">
+        </div>
+        </section>
          <!--Contenido lateral-->
         <aside class="contenido_lateral">
             <!--Navegación-->
             <nav class="menu">
-                <a href="#sobre_mi">Sobre mi</a>
-                <a href="#Experiencia">Experiencia</a>
-                <a href="#Proyectos">Proyectos</a>
-                <a href="#Habilidades">Habilidades</a>
-                <a href="#Cursos">Cursos</a>
-                <a href="#Contactame">Contactame</a>
+                <button onclick="mostrarSeccion('sobre_mi')">Sobre mí</button>
+                <button onclick="mostrarSeccion('experiencia')">Experiencia</button>
+                <button onclick="mostrarSeccion('proyectos')">Proyectos</button>
+                <button onclick="mostrarSeccion('tecnologias')">Tecnologias</button>
+                <button onclick="mostrarSeccion('habilidades')">Habilidades</button>
+                <button onclick="mostrarSeccion('cursos')">Cursos</button>
+                <button onclick="mostrarSeccion('ruta_aprendizaje')">Ruta Aprendizaje</button>
             </nav>  
         </aside>
 
         <!--Seccion de redes de contacto-->
         <section class="redes">
             <nav>
-                <a href="https://github.com/andyj189">Github</a>
-                <a href="www.linkedin.com/in/andy-adrianzen89">LinkedIn</a>
-                <a href="mailto:anzenmeesek@gmail.com">anzenmeesek@gmail.com</a>
+                <a href="https://github.com/andyj189">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/andy-adrianzen89">
+                    <i class="fa-brands fa-linkedin"></i>
+
+                </a>
+                <a href="mailto:anzenmeesek@gmail.com">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
             </nav>
         </section>
     </header>
@@ -37,44 +65,91 @@
     <main class="contenido_principal">
         <section>
             <!--Contenido independiente-->
-            <article>
-                <h1 id="sobre_mi">Sobre Mi</h1>
-                <p>Alumno universitario del 8to ciclo de la carrera de Ingenieria de Sistemas e Informatica</p>
-                <img src="img/foto_perfil.jpg" >
+            <article id="sobre_mi" class="contenido">
+                <h1>Sobre Mi</h1>
+                <p>Soy estudiante de Ingeniería de Sistemas e Informática,
+                apasionado por el desarrollo web, backend y bases de datos.
+                Actualmente desarrollo proyectos utilizando FastAPI,
+                MySQL, React y Git.</p>
+                
             </article>
 
-            <article>
-                <h1 id="Experiencia">Mi experiencia</h1>
+            <article id="experiencia" class="contenido experiencia">
+                <h1>Mi experiencia</h1>
                 <p>Experiencia en atencion al cliente</p>
                 <img >
             </article>
 
-            <section>
-                <h1 id="Proyectos">Proyectos</h1>
-                <article>
-                    <h2>Sistema Web</h2>
-                    <p>Sistema de matriculas</p>
+            <section id="proyectos" class="contenido proyectos-grid">
+                <h1>Proyectos</h1>
+                <article class="proyecto-card">
+                    <h2>Sistema de Matrículas</h2>
+                    <p>
+                    Sistema web para gestionar alumnos,
+                    cursos y matrículas.
+                    </p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>MySQL</li>
+                    </ul>
+                    <a href="#">
+                        Ver proyecto
+                    </a>
                 </article>
 
             </section>
 
-            <section>
-                <h1 id="Habilidades">Habilidades</h1>
+            <section id="tecnologias" class=" contenido Tecnologias">
+                <h1>Tecnologías</h1>
+                <div class="tech-grid">
+                    <div>Python</div>
+                    <div>FastAPI</div>
+                    <div>React</div>
+                    <div>MySQL</div>
+                    <div>Git</div>
+                    <div>Linux</div>
+                </div>
+            </section>
+
+            <section id="habilidades" class="contenido Habilidades">
+                <h1>Habilidades</h1>
                 <article>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                    <ul class="skills">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Python</li>
+                    <li>FastAPI</li>
+                    <li>MySQL</li>
+                    <li>Git</li>
                     </ul>
                 </article>
 
             </section>
 
+            <section id="ruta_aprendizaje" class="contenido">
+            <h1>Mi Ruta de Aprendizaje</h1>
+            <ul>
+                <li>
+                2024 - HTML y CSS
+                </li>
+                <li>
+                2025 - JavaScript y SQL
+                </li>
+                <li>
+                2026 - FastAPI y React
+                </li>
+            </ul>
+
+            </section>
+
         </section>
 
-        <section class="Cursos">
-            <table id="Cursos">
+        <section  id="cursos" class=" contenido Cursos">
+            <table>
                 <tr>
                     <th>CURSOS</th>
                     <th>EMPRESA</th>
@@ -103,7 +178,7 @@
     <!--Pie de pagina-->
     <footer class="pie_pagina">
         <!--Formularios-->
-            <form>
+            <!-- <form>
                 <div>
                     Nombre: <input type="text" value="" placeholder="Ingresa tu nombre">
                     Email: <input type="email" placeholder="Ingresa tu email">
@@ -123,11 +198,23 @@
 
                 </select>
                 
-                <input type="button" value="Ingresar">
+                <input type="submit" value="Ingresar">
                 
-            </form>
+            </form> -->
 
-        <div>Mayo - 2026</div>
+            <p>
+            © 2026 Andy Adrianzen.
+            Todos los derechos reservados.
+            <div>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3"></i>
+
+                <i class="fa-brands fa-js"></i>
+
+            </div>
+            </p>
     </footer>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
